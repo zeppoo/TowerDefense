@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8c9402e4f8a664c4d808cf8a606510e8
+guid: 0c2a4686f7bf28d4883ed3ae7e474bd1
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -109,18 +109,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
-        width: 144
+        y: 0
+        width: 96
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b59c2941829e9184b9cfee14be5e7db2
-      internalID: 733921147
+      spriteID: 72d830a3639f9c54f86991e1b85870a0
+      internalID: -16822235
       vertices: []
       indices: 
       edges: []
@@ -129,61 +129,19 @@ TextureImporter:
       name: Panzer III-Sheet_1
       rect:
         serializedVersion: 2
-        x: 144
-        y: 64
-        width: 144
+        x: 96
+        y: 0
+        width: 96
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6baae0c19ac80584e8d20f9cff3dbbf0
-      internalID: 472733982
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Panzer III-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 144
-        height: 64
-      alignment: 9
-      pivot: {x: 0.47478417, y: 0.49999997}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1689be20defac88499c49927d041a561
-      internalID: -797798968
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Panzer III-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 0
-        width: 144
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c3e4043d4e0aced469a35d246c7a8e8b
-      internalID: 1206149632
+      spriteID: bec738b9d7859de4aa650fd7d3f3a01b
+      internalID: -1044114563
       vertices: []
       indices: 
       edges: []
@@ -199,10 +157,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Panzer III-Sheet_0: 733921147
-      Panzer III-Sheet_1: 472733982
-      Panzer III-Sheet_2: -797798968
-      Panzer III-Sheet_3: 1206149632
+      Panzer III-Sheet_0: -16822235
+      Panzer III-Sheet_1: -1044114563
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

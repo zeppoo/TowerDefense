@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b328465f787fd1343a1fa4b2336e710e
+guid: 943e850f27950274f8fad6671df8af75
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -109,18 +109,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
-        width: 144
+        y: 0
+        width: 112
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 263df4ebfcdaffe4eb6db94f5ae89739
-      internalID: 432844390
+      spriteID: 8534558ad4da1104e8f0631c0d7917e4
+      internalID: 1487927523
       vertices: []
       indices: 
       edges: []
@@ -129,61 +129,19 @@ TextureImporter:
       name: Tiger Tank-Sheet_1
       rect:
         serializedVersion: 2
-        x: 144
-        y: 64
-        width: 144
+        x: 112
+        y: 0
+        width: 112
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 266e1e1fa02765842902a8ec37c24349
-      internalID: -1010589111
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiger Tank-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 144
-        height: 64
-      alignment: 9
-      pivot: {x: 0.5475826, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 23ee9222034abca4dbe36dbc3e441c8c
-      internalID: 154584800
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiger Tank-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 0
-        width: 144
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e84764018c7ef784b89f9b183ee2c106
-      internalID: -1039979286
+      spriteID: ef8642d261ea0a644b8bb13029723293
+      internalID: 78559270
       vertices: []
       indices: 
       edges: []
@@ -199,10 +157,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Tiger Tank-Sheet_0: 432844390
-      Tiger Tank-Sheet_1: -1010589111
-      Tiger Tank-Sheet_2: 154584800
-      Tiger Tank-Sheet_3: -1039979286
+      Tiger Tank-Sheet_0: 1487927523
+      Tiger Tank-Sheet_1: 78559270
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
