@@ -6,17 +6,10 @@ using UnityEngine.Tilemaps;
 
 public class GridPlacement : MonoBehaviour
 {
-    [SerializeField]
-    private LayerMask gridLayer;
-    [SerializeField]
-    private Vector3Int closestTile;//closest tile to mouse position
-    [SerializeField]
-    private Tilemap gridTilemap; // Reference de Tilemap
-    [SerializeField]
-    private TileBase highlightTile; //Sprite die ik wil gebruiken voor highlighted Tile
-    [SerializeField]
-    private Color highlightColor = Color.yellow; // Color for the highlight.
-    public bool buildable;
+    [SerializeField] private LayerMask gridLayer;
+    [SerializeField] private Vector3Int closestTile;//closest tile to mouse position
+    [SerializeField] private Tilemap gridTilemap; // Reference de Tilemap
+    [SerializeField] public bool buildable;
     public Vector3 mousePosition;
 
 

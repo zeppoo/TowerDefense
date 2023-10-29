@@ -6,6 +6,7 @@ public class UnitShoot : MonoBehaviour
 {
     [SerializeField] private GameObject bullet;
     [SerializeField] private GameObject target;
+    [SerializeField] private string targetTag;
     [SerializeField] private bool canShoot;
     [SerializeField] private float fireRate;
     [SerializeField] private float timer;
@@ -36,6 +37,6 @@ public class UnitShoot : MonoBehaviour
 
     public void Shoot()
     {
-            Instantiate(bullet, turret.transform.position, turret.transform.rotation);
+        Instantiate(bullet, new Vector3(turret.transform.position.x, turret.transform.position.y, -1), turret.transform.rotation);
     }
 }
