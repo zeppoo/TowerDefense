@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ae7cf8b9b3c531448b0d6bbe8eebc6b0
+guid: 6931a46a108cecc4a8039c166541ee1b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,85 +105,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Half-Track-Sheet_0
+      name: German Half-Track-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
-        width: 144
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cb3d31e0c84edcf41969b9c169620eb5
-      internalID: 433747531
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Half-Track-Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 64
-        width: 144
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7b2b07b334df08a48be252b924daa105
-      internalID: 315211090
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Half-Track-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 1
         y: 0
-        width: 144
+        width: 96
         height: 64
-      alignment: 9
-      pivot: {x: 0.61554575, y: 0.5134535}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04ba19023ee48d343ac7ebcb753e801f
-      internalID: 2035563587
+      spriteID: 031501ea6627c944f970c19d6739ce2a
+      internalID: -865730693
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Half-Track-Sheet_3
+      name: German Half-Track-Sheet_1
       rect:
         serializedVersion: 2
-        x: 144
+        x: 96
         y: 0
-        width: 144
+        width: 96
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc1bfaaac28b27246baf1f01258244c1
-      internalID: 1065410844
+      spriteID: c637a04a892cad3489a7abe62e7b6b6c
+      internalID: 523176574
       vertices: []
       indices: 
       edges: []
@@ -199,10 +157,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Half-Track-Sheet_0: 433747531
-      Half-Track-Sheet_1: 315211090
-      Half-Track-Sheet_2: 2035563587
-      Half-Track-Sheet_3: 1065410844
+      German Half-Track-Sheet_0: -865730693
+      German Half-Track-Sheet_1: 523176574
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
