@@ -7,6 +7,7 @@ public class FindNearestEnemy : MonoBehaviour
     private Transform targetEnemy;
     private GameObject turret;
     private float rotationSpeed;
+    public GameObject[] enemies;
 
     private void Start()
     {
@@ -30,7 +31,7 @@ public class FindNearestEnemy : MonoBehaviour
 
     void FindClosestEnemy()
     {
-        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        enemies = GameObject.FindGameObjectsWithTag("Enemy");
         float shortestDistance = Mathf.Infinity;
         Transform nearestEnemy = null;
 

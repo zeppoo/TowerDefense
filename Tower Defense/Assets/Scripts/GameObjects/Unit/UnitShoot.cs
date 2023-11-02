@@ -37,6 +37,10 @@ public class UnitShoot : MonoBehaviour
 
     public void Shoot()
     {
-        Instantiate(bullet, new Vector3(turret.transform.position.x, turret.transform.position.y, -1), turret.transform.rotation);
+        if (GetComponent<FindNearestEnemy>().enemies != null)
+        {
+            Instantiate(bullet, new Vector3(turret.transform.position.x, turret.transform.position.y, -1), turret.transform.rotation);
+        }
+
     }
 }

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1295011328919455832}
   - component: {fileID: -3325714373772722111}
   - component: {fileID: 4845014060999386561}
+  - component: {fileID: -4026862140809718267}
   m_Layer: 7
   m_Name: German_Soldier
   m_TagString: Enemy
@@ -133,3 +134,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-4026862140809718267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8249057524876836705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1f54f0fc801d3438b2324ca5ce1751, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 30
+  speed: 5
+  deathFX: {fileID: 5480707401385689059, guid: cdce173ba27c25149ae50fd6c2061a8b, type: 3}

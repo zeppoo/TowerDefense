@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 5124744694306941303}
   - component: {fileID: 187833058756423957}
   - component: {fileID: -18701282642186044}
+  - component: {fileID: 167934058119567121}
   m_Layer: 7
   m_Name: Panzer_3
   m_TagString: Enemy
@@ -166,6 +167,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &167934058119567121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7229014353448405396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1f54f0fc801d3438b2324ca5ce1751, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 200
+  speed: 1
+  deathFX: {fileID: 5480707401385689059, guid: cdce173ba27c25149ae50fd6c2061a8b, type: 3}
 --- !u!1 &7337103002461306815
 GameObject:
   m_ObjectHideFlags: 0

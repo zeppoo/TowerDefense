@@ -179,6 +179,7 @@ GameObject:
   - component: {fileID: 5445518344460004298}
   - component: {fileID: -1284010570594434672}
   - component: {fileID: -6027526841091908141}
+  - component: {fileID: 58278930560727946}
   m_Layer: 7
   m_Name: Tiger
   m_TagString: Enemy
@@ -250,3 +251,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &58278930560727946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5574542770202274466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1f54f0fc801d3438b2324ca5ce1751, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 500
+  speed: 0.3
+  deathFX: {fileID: 5480707401385689059, guid: cdce173ba27c25149ae50fd6c2061a8b, type: 3}

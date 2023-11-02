@@ -6,10 +6,12 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     [SerializeField] private int speed;
+    [SerializeField] private int dmg;
 
     private void Update()
     {
         transform.position += transform.right * Time.deltaTime * speed;
+        Destroy(gameObject, 8);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -17,7 +19,7 @@ public class Bullet : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
         {
             Debug.Log("hit");
-            Destroy(collision.gameObject);
+            collision.gameObject.GetComponent<EnemyStats>().health -= dmg;
             Destroy(gameObject);
         }
     }
