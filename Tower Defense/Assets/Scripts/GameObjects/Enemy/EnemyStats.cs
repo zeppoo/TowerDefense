@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyStats : MonoBehaviour
 {
     public int health;
+    [SerializeField] private int reward;
     [SerializeField] private float speed;
     [SerializeField] private GameObject deathFX;
     
@@ -33,6 +34,7 @@ public class EnemyStats : MonoBehaviour
 
     private void Die()
     {
+        GameManager.manPwr += reward;
         Instantiate(deathFX, transform.position, Quaternion.identity);
         Object.Destroy(gameObject);
     }

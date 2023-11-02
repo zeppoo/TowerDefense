@@ -10,7 +10,7 @@ public class CheckForCollisions : MonoBehaviour
     public bool CheckForCollision(Vector2 position)
     {
         colliderSize = GameManager.selectedUnit.GetComponent<BoxCollider2D>().size;// pakt de collider grootte van de huidige unit
-        Collider2D[] colliders = Physics2D.OverlapBoxAll(position, colliderSize, 90, collisionLayer);
+        Collider2D[] colliders = Physics2D.OverlapBoxAll(position, colliderSize, 0, collisionLayer);
 
         if(colliders.Length > 0 )
         {

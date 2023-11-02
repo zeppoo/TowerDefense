@@ -13,7 +13,7 @@ public class Upgrade : MonoBehaviour
 
     private void Start()
     {
-        counter.GetComponent<TextMeshPro>().text = cost.ToString();
+        counter.GetComponent<TMP_Text>().text = cost.ToString();
     }
 
     public void OnButtonPress()
@@ -22,13 +22,15 @@ public class Upgrade : MonoBehaviour
         {
             buttons[newestUpgrade].GetComponent<Select_Unit>().active = true;
             newestUpgrade++;
+            GameManager.manPwr -= cost;
+
             if (newestUpgrade > 5)
             {
                 Destroy(gameObject);
             }
 
             cost = cost * 2;
-            counter.GetComponent<TextMeshPro>().text = cost.ToString();
+            counter.GetComponent<TMP_Text>().text = cost.ToString();
         }
     }
 }

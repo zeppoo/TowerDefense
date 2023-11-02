@@ -91,6 +91,7 @@ MonoBehaviour:
   unitHealth: 100
   rotationSpeed: 1
   turret: {fileID: 8489740112386530325}
+  price: 250
 --- !u!114 &8446712409627280376
 MonoBehaviour:
   m_ObjectHideFlags: 0

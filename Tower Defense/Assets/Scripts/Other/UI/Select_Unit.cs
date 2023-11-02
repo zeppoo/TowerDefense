@@ -23,5 +23,9 @@ public class Select_Unit : MonoBehaviour
         {
             GetComponent<Image>().color = Color.gray;
         }
+        if(active)
+        {
+            GetComponent<Image>().color = Color.white;
+        }
     }
 }

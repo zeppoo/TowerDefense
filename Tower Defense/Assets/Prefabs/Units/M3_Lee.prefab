@@ -115,6 +115,7 @@ MonoBehaviour:
   unitHealth: 100
   rotationSpeed: 3
   turret: {fileID: 8214776566849171941}
+  price: 0
 --- !u!114 &7674515618488199275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -393,6 +394,7 @@ MonoBehaviour:
   unitHealth: 100
   rotationSpeed: 6
   turret: {fileID: 8214776566853326825}
+  price: 100
 --- !u!114 &783947873291983510
 MonoBehaviour:
   m_ObjectHideFlags: 0

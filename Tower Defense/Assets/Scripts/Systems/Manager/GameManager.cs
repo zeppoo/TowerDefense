@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static bool selection;
-    public static int manPwr;
+    public static int manPwr = 50;
     public static GameObject selectedUnit;
     [SerializeField] private GameObject defaultUnit;
 

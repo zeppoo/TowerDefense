@@ -147,5 +147,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 30
-  speed: 5
+  reward: 5
+  speed: 2
   deathFX: {fileID: 5480707401385689059, guid: cdce173ba27c25149ae50fd6c2061a8b, type: 3}
