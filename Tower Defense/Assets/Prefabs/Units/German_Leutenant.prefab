@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -4313999951883844612}
   - component: {fileID: 7477600730786570762}
   - component: {fileID: -7397236676865629631}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: German_Leutenant
   m_TagString: Enemy
   m_Icon: {fileID: 0}

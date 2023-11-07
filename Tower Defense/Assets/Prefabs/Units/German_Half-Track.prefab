@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3453992804379320655}
   - component: {fileID: 9025255243645444080}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: German Half-TrackTurret-Sheet_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 4492725566934723537}
   - component: {fileID: -6280006819246053876}
   - component: {fileID: 8078771459488057886}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: German_Half-Track
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -193,7 +193,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6602590257496108983}
   - component: {fileID: 2967502104513853123}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: German Half-Track-Sheet_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -1,26 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class WaveSpawner : MonoBehaviour
 {
+    public GameObject waveCounter;
     public EnemySpawner[] waves;
-
     private EnemySpawner currentWave;
-
-    [SerializeField]
-    private Transform[] spawnpoints;
-
-    private float timeBtwnSpawns;
+    [SerializeField] private Transform[] spawnpoints;
+    private int enemiesSpawned = 0;
     private int i = 0;
-
     private bool stopSpawning = false;
+    public bool incrPossible = true;
 
     private void Awake()
     {
-
         currentWave = waves[i];
-        timeBtwnSpawns = currentWave.TimeBeforeThisWave;
     }
 
     private void Update()
@@ -29,37 +25,56 @@ public class WaveSpawner : MonoBehaviour
         {
             return;
         }
-
-        if (Time.time >= timeBtwnSpawns)
-        {
-            SpawnWave();
-            IncWave();
-
-            timeBtwnSpawns = Time.time + currentWave.TimeBeforeThisWave;
-        }
     }
+
 
     private void SpawnWave()
     {
+        enemiesSpawned = 0;
+        StartCoroutine(SpawnEnemiesWithDelay());
+        
+    }
+
+    private IEnumerator SpawnEnemiesWithDelay()
+    {
         for (int i = 0; i < currentWave.NumberToSpawn; i++)
         {
-            int num = Random.Range(0, currentWave.EnemiesInWave.Length);
-            int num2 = Random.Range(0, spawnpoints.Length);
+            int enemyIndex = Random.Range(0, currentWave.EnemiesInWave.Length);
+            int spawnPointIndex = Random.Range(0, spawnpoints.Length);
 
-            Instantiate(currentWave.EnemiesInWave[num], spawnpoints[num2].position, spawnpoints[num2].rotation);
+            Instantiate(currentWave.EnemiesInWave[enemyIndex], spawnpoints[spawnPointIndex].position, spawnpoints[spawnPointIndex].rotation);
+
+            enemiesSpawned++;
+
+            if (enemiesSpawned < currentWave.NumberToSpawn)
+            {
+                yield return new WaitForSeconds(currentWave.TimeBtwnSpawn);
+            }
+            if (enemiesSpawned == currentWave.NumberToSpawn)
+            {
+                incrPossible = true;
+            }
         }
     }
 
-    private void IncWave()
+    public void IncrWave()
     {
-        if (i + 1 < waves.Length)
+        if(incrPossible)
         {
-            i++;
-            currentWave = waves[i];
+            incrPossible = false;
+            SpawnWave();
+            if (i + 1 < waves.Length)
+            {
+                i++;
+                currentWave = waves[i];
+                waveCounter.GetComponent<TMP_Text>().text = waves[i].name;
+            }
+            else
+            {
+                stopSpawning = true;
+            }
+            
         }
-        else
-        {
-            stopSpawning = true;
-        }
+        
     }
 }

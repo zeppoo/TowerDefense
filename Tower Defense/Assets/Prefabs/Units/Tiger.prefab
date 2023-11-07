@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4027351752992085181}
   - component: {fileID: 8213075914739512158}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tiger Tank-Sheet_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1899475736065429089}
   - component: {fileID: 3132057160163384899}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TigerTurret-Sheet_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -180,7 +180,7 @@ GameObject:
   - component: {fileID: -1284010570594434672}
   - component: {fileID: -6027526841091908141}
   - component: {fileID: 58278930560727946}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Tiger
   m_TagString: Enemy
   m_Icon: {fileID: 0}

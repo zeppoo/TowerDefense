@@ -13,6 +13,7 @@ public class GridPlacement : MonoBehaviour
     [SerializeField] public bool buildable;
     public Vector3 mousePosition;
     private bool removing = false;
+    [SerializeField]private bool building = false;
 
 
 
@@ -24,21 +25,25 @@ public class GridPlacement : MonoBehaviour
         closestTile = gridTilemap.WorldToCell(mousePosition);//pakt dichtsbijzijnde cell gebaseerd op muispositie
         Vector3 closesTilePos = gridTilemap.GetCellCenterWorld(closestTile);//pakt het midden van de cell
 
-        if (Input.GetMouseButtonDown(0) && removing == false)
+        if (Input.GetMouseButtonDown(0) && building == true)
         {
+            Debug.Log("it clicks");
             buildable = GameObject.Find("BuildableArea").GetComponent<CheckBuildArea>().IsPositionBuildable(mousePosition);
             bool noCollision = GetComponent<CheckForCollisions>().CheckForCollision(closesTilePos);
-
+            Debug.Log(noCollision);
             if (buildable && GameManager.selection && noCollision)
             {
-                if (GameManager.manPwr - GameManager.selectedUnit.GetComponent<UnitStats>().price <= 0)
+                if (GameManager.manPwr - GameManager.selectedUnit.GetComponent<UnitStats>().price < 0)
                 {
+                    Debug.Log("niet genoeg geld");
+                    building = false;
                     return;
                 }
                 else
                 {
                     GameManager.manPwr -= GameManager.selectedUnit.GetComponent<UnitStats>().price;
                     Instantiate(GameManager.selectedUnit, new Vector3(closesTilePos.x, closesTilePos.y, -1), Quaternion.identity);
+                    building = false;
                 }
             }
         }
@@ -60,6 +65,11 @@ public class GridPlacement : MonoBehaviour
     public void removal()
     {
         removing = !removing;
+    }
+
+    public void build()
+    {
+        building = !building;
     }
 
 }

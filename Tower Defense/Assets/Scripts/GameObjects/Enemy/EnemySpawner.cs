@@ -9,7 +9,7 @@ public class EnemySpawner : ScriptableObject
     public GameObject[] EnemiesInWave { get; private set; }
 
     [field: SerializeField]
-    public float TimeBeforeThisWave { get; private set; }
+    public float TimeBtwnSpawn { get; private set; }
 
     [field: SerializeField]
     public float NumberToSpawn { get; private set; }

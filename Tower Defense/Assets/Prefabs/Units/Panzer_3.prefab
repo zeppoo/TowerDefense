@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7667988612279646400}
   - component: {fileID: 5094849059485224351}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Panzer IIITurret-Sheet_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 187833058756423957}
   - component: {fileID: -18701282642186044}
   - component: {fileID: 167934058119567121}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Panzer_3
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -193,7 +193,7 @@ GameObject:
   m_Component:
   - component: {fileID: 765321953109415290}
   - component: {fileID: 91492391320373704}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Panzer III-Sheet_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}

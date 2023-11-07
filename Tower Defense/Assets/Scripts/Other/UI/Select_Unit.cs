@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Select_Unit : MonoBehaviour
 {
+    [SerializeField] private GameObject GridPlacement;
     [SerializeField] private GameObject unit;
     public bool active;
 
@@ -14,6 +15,7 @@ public class Select_Unit : MonoBehaviour
         {
             GameManager.selection = true;
             GameManager.selectedUnit = unit;
+            GridPlacement.GetComponent<GridPlacement>().build();
         }
     }
 

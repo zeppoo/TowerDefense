@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class UnitShoot : MonoBehaviour
 {
+    [SerializeField] private Animator animator;
     [SerializeField] private GameObject bullet;
     [SerializeField] private GameObject target;
-    [SerializeField] private string targetTag;
     [SerializeField] private bool canShoot;
     [SerializeField] private float fireRate;
     [SerializeField] private float timer;

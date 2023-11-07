@@ -15,6 +15,7 @@ public class CheckBuildArea : MonoBehaviour
             return true; // Position is within the buildable area.
         }
 
+        Debug.Log("collider hit");
         return false; // Position is outside the buildable area.
     }
 }
