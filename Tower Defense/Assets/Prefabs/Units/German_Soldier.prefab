@@ -147,6 +147,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 30
+  hearts: {fileID: 8225699560736714831, guid: e3a9177a790ded94cbb17a8b8b76e9af, type: 3}
+  buildableArea:
+    serializedVersion: 2
+    m_Bits: 64
   reward: 5
   speed: 2
   deathFX: {fileID: 5480707401385689059, guid: cdce173ba27c25149ae50fd6c2061a8b, type: 3}
