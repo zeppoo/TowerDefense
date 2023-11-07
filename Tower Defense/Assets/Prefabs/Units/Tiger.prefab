@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4027351752992085181}
   - component: {fileID: 8213075914739512158}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tiger Tank-Sheet_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1899475736065429089}
   - component: {fileID: 3132057160163384899}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TigerTurret-Sheet_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -178,9 +178,11 @@ GameObject:
   m_Component:
   - component: {fileID: 5445518344460004298}
   - component: {fileID: -1284010570594434672}
-  m_Layer: 7
+  - component: {fileID: -6027526841091908141}
+  - component: {fileID: 58278930560727946}
+  m_Layer: 8
   m_Name: Tiger
-  m_TagString: Unit
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -228,3 +230,44 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 9, y: 5}
   m_EdgeRadius: 0
+--- !u!50 &-6027526841091908141
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5574542770202274466}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &58278930560727946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5574542770202274466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1f54f0fc801d3438b2324ca5ce1751, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 500
+  hearts: {fileID: 0}
+  buildableArea:
+    serializedVersion: 2
+    m_Bits: 64
+  reward: 250
+  speed: 0.3
+  deathFX: {fileID: 5480707401385689059, guid: cdce173ba27c25149ae50fd6c2061a8b, type: 3}

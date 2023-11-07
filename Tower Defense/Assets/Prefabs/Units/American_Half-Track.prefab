@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: -1326171454, guid: f871fc47cb3fdf743b9aacc8e3cb3e04, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 6, y: 4}
@@ -94,6 +94,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3997806493944003247}
   - component: {fileID: -5043782203427805791}
+  - component: {fileID: 3569063667718668409}
+  - component: {fileID: -7577401301730214182}
+  - component: {fileID: 1690272117817631739}
   m_Layer: 7
   m_Name: American_Half-Track
   m_TagString: Untagged
@@ -145,6 +148,53 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6, y: 3}
   m_EdgeRadius: 0
+--- !u!114 &3569063667718668409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3997806493944003246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50243cdbd8d27374f8bbfd4535b2f847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemies: []
+--- !u!114 &-7577401301730214182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3997806493944003246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 108c31ca70bf4db429cf4d396b36e827, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitHealth: 100
+  rotationSpeed: 10
+  turret: {fileID: 3997806494910316763}
+  price: 50
+--- !u!114 &1690272117817631739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3997806493944003246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 247715c256eeb0049a31ee74fd160b57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 5753154306771552762, guid: d93b19a6469d95940bde88d6aaed2df1, type: 3}
+  target: {fileID: 3997806494910316763}
+  targetTag: 
+  canShoot: 0
+  fireRate: 0.2
+  timer: 0
 --- !u!1 &3997806494287090970
 GameObject:
   m_ObjectHideFlags: 0
@@ -220,7 +270,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: -1200522075, guid: f871fc47cb3fdf743b9aacc8e3cb3e04, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 6, y: 4}
@@ -239,6 +289,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3997806494910316760}
   - component: {fileID: 3997806494910316761}
+  - component: {fileID: 1960905844705335004}
   m_Layer: 7
   m_Name: American Half-TrackTurret-Sheet_0
   m_TagString: Untagged
@@ -304,7 +355,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: -1184107548, guid: bf90d55d8eda938458e55165f57449ac, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 3, y: 2}
@@ -313,3 +364,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1960905844705335004
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3997806494910316763}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2a42a5d5c35b59744854bec7882a7bb5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0

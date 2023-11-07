@@ -10,6 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8214776566849171938}
   - component: {fileID: 8214776566849171939}
+  - component: {fileID: 6407783978404946748}
+  - component: {fileID: 6244232646552563582}
+  - component: {fileID: 7674515618488199275}
   m_Layer: 7
   m_Name: M3 LeeTurret-Sheet_4
   m_TagString: Untagged
@@ -24,14 +27,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8214776566849171941}
-  m_LocalRotation: {x: -0, y: -0, z: -0.01621372, w: 0.9998686}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.5, y: -1, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8214776568410927499}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -1.858}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8214776566849171939
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -84,6 +87,53 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6407783978404946748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8214776566849171941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50243cdbd8d27374f8bbfd4535b2f847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemies: []
+--- !u!114 &6244232646552563582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8214776566849171941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 108c31ca70bf4db429cf4d396b36e827, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitHealth: 100
+  rotationSpeed: 3
+  turret: {fileID: 8214776566849171941}
+  price: 0
+--- !u!114 &7674515618488199275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8214776566849171941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 247715c256eeb0049a31ee74fd160b57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 6636008395560607301, guid: 42f2b742bbe189a41acec93b132ec7bc, type: 3}
+  target: {fileID: 8214776566849171941}
+  targetTag: 
+  canShoot: 0
+  fireRate: 8
+  timer: 0
 --- !u!1 &8214776566853326825
 GameObject:
   m_ObjectHideFlags: 0
@@ -262,6 +312,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8214776568410927499}
   - component: {fileID: 3110991564211148424}
+  - component: {fileID: 1568501933654948737}
+  - component: {fileID: 1728897842969870957}
+  - component: {fileID: 783947873291983510}
   m_Layer: 7
   m_Name: M3_Lee
   m_TagString: Untagged
@@ -313,3 +366,50 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6, y: 3}
   m_EdgeRadius: 0
+--- !u!114 &1568501933654948737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8214776568410927498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50243cdbd8d27374f8bbfd4535b2f847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemies: []
+--- !u!114 &1728897842969870957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8214776568410927498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 108c31ca70bf4db429cf4d396b36e827, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitHealth: 100
+  rotationSpeed: 6
+  turret: {fileID: 8214776566853326825}
+  price: 100
+--- !u!114 &783947873291983510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8214776568410927498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 247715c256eeb0049a31ee74fd160b57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 5753154306771552762, guid: d93b19a6469d95940bde88d6aaed2df1, type: 3}
+  target: {fileID: 8214776566853326825}
+  targetTag: 
+  canShoot: 0
+  fireRate: 0.7
+  timer: 0

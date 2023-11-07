@@ -3,28 +3,19 @@ Dit is een template wat door jullie te gebruiken is voor het juist inleveren van
 
 Begin met een korte omschrijving van je towerdefense game en hoe deze werkt. Plaats ook een paar screenshots.
 
-![not really my game](https://cdn.akamai.steamstatic.com/steam/apps/246420/ss_aaaf33cdb9106bd0801a36049516d95c6f2352b0.600x338.jpg?t=1686321490)
+![preview 1](ReadMePictures\Preview1.png)
 
 ![also not](https://cdn.akamai.steamstatic.com/steam/apps/960090/ss_900d7c00d45ff2a258d4c8d59ee47f7f04854c37.600x338.jpg?t=1686097340)
 
 
 ## Product 1: "DRY SRP Scripts op GitHub"
 
-Plaats hier minimaal 1 link naar scripts die voldoen aan de eisen van **"Don't Repeat Yourself (DRY)"** en **"Single Responsibility Principle"**.
-Omschrijf hier waarom jij denkt dat je in die scripts aan deze eisen voldoet.
-
-Bijvoorbeeld:
-
-*"In dit script heb ik een array gebruikt voor al mijn vijanden die in de nieuwe wave worden gespawnd. Hierdoor heb ik mijzelf niet hoeven herhalen **(DRY)** in de code omdat ik met 1 regel alle enemies kan plaatsen via en for each loop.
-[link naar script](/MyTowerDefenseGame/Assets/Scripts/JustAScript.cs)"*
+In dit script heb ik een stukje code waarbij een unit een bepaalde bullet moet schieten met een bepaalde fire rate **(DRY)** in de code zit een counter die checkt of je kan schieten gebaseerd op de gedefineerde fire rate
+[link naar script](Assets/Scripts/GameObjects/Unit/UnitShoot.cs)
 
 ## Product 2: "Projectmappen op GitHub"
 
-Je commit de mappenstructuur van je unity project op github en verwijst vanuit je readme naar de root map van je project. Met een netjes en goed gestructureerde mappenstructuur en benamingen van files toon je aan dat je dit leerdoel beheerst. 
-
-Dit is de [ROOT](/MyTowerDefenseGame/) folder van mijn unity project.
-
-Zorg dat deze verwijst naar je Develop branch.
+Dit is de [ROOT](/Tower_Defense/?branch=Develop) folder van mijn unity project.
 
 ## Product 3: Build op Github
 
@@ -34,40 +25,27 @@ Je maakt in Unity een stabiele “build” van je game waarbij bugs en logs eers
 
 ## Product 4: Game met Sprites(animations) en Textures 
 
-De build van je game bevat textures, sprites en sprite animations(bijv particles) die op de juiste manier zijn gebruikt en zorgen voor een goede afwerking van je game.  
-
-Plaats in je readme een animated gif van je gameplay (+- 10 sec.) waarin de implementatie van je textures en sprites goed te zien is.
-
-![Textures Sprites](readmeVisuals/texturesSprites.gif)
+![Textures Sprites](Aseprite\Full-Sprite-Sheet.gif)
 
 ## Product 5: Issues met debug screenshots op GitHub 
 
-Zodra je bugs tegenkomt maak je een issue aan op github. In de issue omschrijf je het probleem en je gaat proberen via breakpoints te achterhalen wat het probleem is. Je maakt screenshot(s) van het debuggen op het moment dat je via de debugger console ziet wat er mis is. Deze screenshots met daarbij uitleg over het probleem en de bijhorende oplossing post je in het bijhorende github issue. 
-[Hier de link naar mijn issues](https://github.com/erwinhenraat/TowerDefenseTemplate/issues/)
+[Hier de link naar mijn issues](D:\Rein\Unity\TowerDefense\Issues)
 
 ## Product 6: Game design met onderbouwing 
 
-Je gebruikt een game design tool om je game design vast te leggen en te communiceren. Daarnaast onderbouw je de design keuzes ten aanzien van “playability” en “replayability” voor je game schriftelijk. 
-
-Voorbeeld van een one page design:
-![](https://external-preview.redd.it/48mnMpA0TbiihGo4HsJiWrJhK72xeTRwV2o70_AKilw.jpg?auto=webp&s=3a1ae18f0e4fba7a465643987cbe9cf409466e53)
-
-Omschrijf per mechanic welke game design keuzes je hebt gemaakt en waarom je dit hebt gedaan.
-
 *  **Je game bevat torens die kunnen mikken en schieten op een bewegend doel.** 
 
-*Mijn torens hebben ook nog een f.o.v waardoor je pas gaan mikken als enemies in de buurt zijn. ook hebben mijn torens geen 360 graden view maar 90 graden waardoor het een extra uitdaging is voor de speler om de torens ook op de meest tactische manier te roteren.*
+*Mijn units worden op een grid geplaatst waar ze de dichtsbijzijnde enemy vinden en vervolgens daar naartoe draaien,
+elke unit neemt een bepaalt stuk grond in in je bouwveld, dus uiteindelijk zul je moeten puzzelen om de beste opstelling te maken*
 
 *  **Je game bevat vernietigbare vijanden die 1 of meerderen paden kunnen volgen.**  
 
-*Mijn enemies bevatten 3 types: 
-1 snelle die ook snel dood gaat. echter als er veel snelle enemies zijn is de kans steeds groter dat ze bij hun doel komen omdat de torens maar 1 enemy tegelijk kan targetten. Het forceert de speler dus om veel goedkope torens te plaatsen.
-Ook is er een langzame gepantserde enemy. Deze kan eigenlijk alleen maar worden vernietigd door magische torens die zijn geupgrade. goedkope torens doen bijna geen schade. De speler moet dus een balans gaan zoeken tussen veel goedkope torens en upgraden van torens.
-Tot slot is er een vijand die andere enemies healt dit zorgt ervoor dat de speler een extra nadeel heeft en de torens handmatig de deze healer moet laten targetten hierdoor wordt de speler gedwongen om actiever de game te spelen omdat anders geen enkele enemy meer dood gaat.*
+*Mijn enemies bestaan uit infantrie(snel maar zwak) en voertuigen/tanks(langzaam maar sterk)*
 
 *  **Je game bevat een “wave” systeem waarmee er onder bepaalde voorwaarden (tijd/vijanden op) nieuwe waves met vijanden het veld in komen.**
 
-*Onderbouwing hier...*
+*Mijn game bestaat uit waves, elke wave heeft zijn eigen enemy aantallen en soorten,
+je kan nadat de wave over is de volgende wave starten(niet eerder)*
 
 *  **Een “health” systeem waarmee je levens kunt verliezen als vijanden hun doel bereiken en zodoende het spel kunt verliezen.** 
 
@@ -75,15 +53,11 @@ Tot slot is er een vijand die andere enemies healt dit zorgt ervoor dat de spele
 
 *  **Een “resource” systeem waarmee je resources kunt verdienen waarmee je torens kunt kopen en .evt upgraden.**
 
-*Onderbouwing hier...*
+*Mijn Game bevat een geld systeem waarbij je units kan kopen en daarnaast ook je arsenal upgraden om nieuwe units te unlocken*
 
 *  **Een “upgrade” systeem om je torens te verbeteren.**
 
-*Onderbouwing hier...*
-
-*  **Een “movement prediction” systeem waarmee je kan berekenen waar een toren heen moeten schieten om een bewegend object te kunnen raken. (Moeilijk)**
-
-*Onderbouwing hier...*
+*Het upgrade systeem is dat je 6 units hebt, 5 hiervan zijn in het begin afgesloten, door het arsenal te upgraden unlock je nieuwe units*
 
 ## Product 7: Class Diagram voor volledige codebase 
 

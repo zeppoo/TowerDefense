@@ -75,6 +75,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50243cdbd8d27374f8bbfd4535b2f847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemies: []
 --- !u!114 &-862514883863680750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90,6 +91,7 @@ MonoBehaviour:
   unitHealth: 100
   rotationSpeed: 1
   turret: {fileID: 8489740112386530325}
+  price: 250
 --- !u!114 &8446712409627280376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104,8 +106,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 391676456348560744, guid: ba73a8c011e7bce459ef187a5885f623, type: 3}
   target: {fileID: 8489740112386530325}
+  targetTag: 
   canShoot: 0
-  fireRate: 3
+  fireRate: 14
   timer: 0
 --- !u!1 &8489740112386530325
 GameObject:
@@ -182,7 +185,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 1408222815, guid: 0d7460e739d569a459a5885f52f59c60, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 9, y: 4}
@@ -266,7 +269,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: -1920644166, guid: c5cdeef09b2f4fc4a9d9ce9803a4aab5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 7, y: 4}
